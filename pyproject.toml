@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pubmed-project"
+version = "0.1.0"
+description = "A command-line tool to fetch research papers from PubMed."
+authors = ["Basavakiran <132135082+kiranmathpati@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.14"
+requests = ">=2.32.3,<3.0.0"
+xmltodict = ">=0.14.2,<0.15.0"
+pandas = ">=2.2.3,<3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+twine = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pubmed-search = "pubmed_project.fetch_pubmed:main"
