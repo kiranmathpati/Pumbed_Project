@@ -18,7 +18,7 @@ This project fetches research papers from PubMed based on a user query, filters 
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/pubmed-project.git
+   git clone https://github.com/kiranmathpati/pubmed-project.git
    cd pubmed-project
    ```
 2. Install dependencies using Poetry:
